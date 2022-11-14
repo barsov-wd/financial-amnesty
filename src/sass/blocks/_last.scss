@@ -1,0 +1,112 @@
+.last {
+    position: relative;
+    padding: 93px 0 81px 0;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 47%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 951px;
+        height: 566px;
+        background: url('../img/promo/promo-bg.png') no-repeat;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__inner-title {
+        width: 757px;
+        font-family: 'Montserrat Bold', sans-serif;
+        font-weight: 800;
+        font-size: 37px;
+        line-height: 45px;
+        color: #03192E;
+        margin-bottom: 10px;
+    }
+    &__inner-subtitle {
+        width: 1007px;
+        font-family: 'Montserrat Semibold', sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        color: #D8252C;
+        margin-bottom: 10px;
+        &--bold {
+            font-family: 'Montserrat Black', sans-serif;
+            font-weight: 900;
+        }
+    }
+    &__inner-descr {
+        width: 731px;
+        font-family: 'Montserrat Semibold', sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        color: #03192E;
+        margin-bottom: 70px;
+    }
+    &__inner-text {
+        font-family: 'Montserrat Black', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        color: #073663;
+        margin-bottom: 25px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    &__item-descr {
+        margin-left: 15px;
+    }
+    &__items {
+        width: 618px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 35px;
+    }
+    &__block-form {
+        padding: 100px 40px 105px 40px;
+        width: 506px;
+        background: #073663;
+        border-radius: 4px;
+    }
+    &__block-title {
+        text-align: center;
+        font-family: 'Montserrat Semibold', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 67px;
+    }
+    &__form {
+        width: 100%;
+    }
+    &__input {
+        font-family: 'Montserrat Medium', sans-serif;
+        padding: 0 30px;
+        font-size: 20px;
+        line-height: 24px;
+        width: 100%;
+        height: 70px;
+        margin-bottom: 20px;
+        &--last {
+            margin-bottom: 35px;
+        }
+        &::placeholder {
+            color: rgba(#03192E, .7);
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__button {
+        width: 100%;
+        height: 60px;
+    }
+}

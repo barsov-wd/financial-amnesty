@@ -1,0 +1,32 @@
+.features {
+    position: relative;
+    z-index: 4;
+    padding-top: 93px;
+    padding-bottom: 43px;
+    background: url('../img/features/features-bg.png') no-repeat;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-family: 'Montserrat Black', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__item {
+        text-align: center;
+    }
+    &__item-image {
+        margin-bottom: 15px;
+    }
+    &__item-descr {
+        font-family: 'Montserrat Semibold', sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+}

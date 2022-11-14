@@ -1,0 +1,15 @@
+.footer {
+    padding: 25px 0;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.13);
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        font-family: 'Montserrat Medium', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        color: #073663;
+    }
+}

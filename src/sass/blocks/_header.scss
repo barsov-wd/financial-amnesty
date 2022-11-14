@@ -1,0 +1,27 @@
+.header {
+    position: relative;
+    z-index: 10;
+    padding: 14px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        font-family: 'Montserrat Black', sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+        color: #D8252C;
+        &--color {
+            color: #073663;
+        }
+    }
+    &__button {
+        width: 375px;
+        height: 60px;
+    }
+    &__button-mobile {
+        display: none;
+    }
+}

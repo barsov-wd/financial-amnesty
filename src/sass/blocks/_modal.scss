@@ -1,0 +1,200 @@
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 199;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+    transition: 0.3s;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    backdrop-filter: blur(4px);
+    transition: 0.3s;
+
+    &--active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &-main {
+        &__dialog {
+            width: 100%;
+            max-width: 560px;
+            background: #456481;
+            color: #fff;
+            box-shadow: 5px 5px 10px rgba(8, 32, 55, 0.55);
+            border-radius: 2px;
+            padding: 45px 92px 142px;
+            position: relative;
+        }
+
+        &__text {
+            font-family: 'Montserrat Black', sans-serif;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            margin-bottom: 68px;
+        }
+
+        &__title {
+            font-family: 'Montserrat Bold', sans-serif;
+            font-weight: 800;
+            font-size: 37px;
+            line-height: 120%;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+
+        &__input-group {
+            width: 100%;
+            margin-bottom: 20px;
+            &:last-of-type {
+                margin-bottom: 35px;
+            }
+        }
+
+        &__button {
+            background: #D63434;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: #fff;
+            width: 100%;
+            height: 60px;
+        }
+
+        &__input {
+            width: 100%;
+            height: 70px;
+            background: #FFFFFF;
+            border: none;
+            border: 0.5px solid #E0E0E0;
+            border-radius: 5px;
+            font-size: 20px;
+            line-height: 120%;
+            padding: 0 30px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: rgba(#03192E, .7);
+            }
+        }
+
+        &__close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        &__text-small {
+            font-size: 14px;
+            line-height: 16px;
+            color: #111111;
+            text-align: center;
+        }
+    }
+
+    &-thanks {
+        &__dialog {
+            position: relative;
+            background: #456481;
+            color: #fff;
+            box-shadow: 5px 5px 10px rgba(8, 32, 55, 0.55);
+            border-radius: 2px;
+            width: 100%;
+            padding-top: 45px;
+            max-width: 560px;
+            min-height: 664px;
+            text-align: center;
+        }
+
+        &__img {
+            margin-bottom: 45px;
+        }
+        &__descr {
+            font-family: 'Montserrat Black', sans-serif;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 120px;
+        }
+
+        &__title {
+            font-family: 'Montserrat Bold', sans-serif;
+            font-weight: 800;
+            font-size: 37px;
+            line-height: 120%;
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            font-family: 'Montserrat Semibold', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 120%;
+            text-align: center;
+        }
+
+        &__close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+    }
+
+    &-thanksQ {
+        &__dialog {
+            position: relative;
+            background: #D8252C;
+            color: #fff;
+            box-shadow: 0px 4px 5px rgba(163, 0, 6, 0.13);
+            border-radius: 2px;
+            max-width: 585px;
+            padding: 114px 86px 100px;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__img {
+            margin-bottom: 48px;
+        }
+
+        &__title {
+            font-family: 'Montserrat Bold', sans-serif;
+            font-weight: 800;
+            font-size: 37px;
+            line-height: 120%;
+            margin-bottom: 40px;
+        }
+
+        &__close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+        }
+
+        &__text {
+            font-size: 32px;
+            line-height: 120%;
+            text-align: center;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
